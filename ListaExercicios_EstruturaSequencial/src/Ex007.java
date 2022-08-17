@@ -16,6 +16,8 @@ public class Ex007 {
 
         float pagamento = valorHora * horaTrabalhada;
         System.out.printf("O pagamento para %s deve ser %.2f",nome,pagamento);
+
+        entrada.close();
     }
     
 }
