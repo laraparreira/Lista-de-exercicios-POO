@@ -1,2 +1,2 @@
 # Lista-de-exercicios-POO
- Lista de exercícios  - Estrutura Sequencial
+ Lista de exercícios de Programação Orientada a Objeto - Estrutura Sequencial
