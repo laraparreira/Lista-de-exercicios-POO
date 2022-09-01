@@ -9,17 +9,25 @@ public class Ex008 {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        float  tempF, tempC;
-        char temp = 'c'; 
+
+        double  temperatura, temperaturaC, temperaturaF;
+        char letra; 
 
         System.out.print("Você vai digitar a temperatura em qual escala (C/F)? ");
-        String temp2 = sc.next();
-        if (temp == 'c' || temp == 'C'){
-            System.out.print("Digite a temperatura em Fahrenheit: ");
-            tempF = sc.nextFloat();
-            tempC = ((5/9)*(tempF - 32));
-            System.out.printf("Temperatura equivalente em Celsius: %.2f" + tempC );
+        letra = sc.next().charAt(0);
+
+        if (letra == 'F' || letra == 'f'){
+            System.out.printf("Digite a temperatura em Fahrenheit: ");
+            temperatura = sc.nextDouble();
+            temperaturaC = (temperatura - 32) * 5/9;
+            System.out.printf("Temperatura equivalente em Celsius: %.2f ", temperaturaC);
+        }else if(letra == 'C' || letra == 'c'){
+            System.out.printf("Digite a temperatura em Celsius:");
+            temperatura = sc.nextDouble();
+            temperaturaF = (temperatura * 1.8) + 32;
+            System.out.printf("Temperatura equivalente em Fahrenheit: %.2f", temperaturaF);
         }
+       
 
         sc.close();
     }
