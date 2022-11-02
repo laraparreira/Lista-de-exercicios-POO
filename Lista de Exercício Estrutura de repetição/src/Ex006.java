@@ -22,15 +22,14 @@ public class Ex006 {
            
             if (codigo == 1){
                 alcool += 1;
-            }if (codigo == 2){
+            }else if (codigo == 2){
                 gasolina += 1;
-            }if (codigo == 3){
+            }else if (codigo == 3){
                 diesel += 1;
-            }if (codigo == 4){
-                System.out.println("Muito obrigado");
             }
             
         }
+        System.out.println("Muito obrigado");
         System.out.println("Álcool: " + alcool);
         System.out.println("Gasolina: " + gasolina);
         System.out.println("Diesel : " + diesel);

@@ -11,12 +11,13 @@ public class Ex002 {
         int idade = 0;
         double soma_idades = 0;
         double media = 0;
+
         while (idade >= 0){
             System.out.println("Digite as idades: ");
             idade = sc.nextInt();
             if (idade > 0){
                 soma_idades = soma_idades + idade;
-                cont ++;
+                cont ++; // cont = cont + 1
             } 
         
         }
